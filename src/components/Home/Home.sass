@@ -1,0 +1,174 @@
+@import '../../mq.sass'
+
+
+section.hero.is-success
+   
+    +mobile
+        
+
+.button
+    margin-top: 5px
+    border: 1px solid #f0f0f0
+    border-radius: 34px
+    color: #f0f0f0
+    background: transparent
+    padding: 12px 20px
+    &:hover
+        background-color: #f0f0f0
+        color: #2a2a2a
+
+.nav-menu
+    +mobile
+        background-color: #2a2a2a
+.hero-body
+    +mobile
+         height: 100%
+         width: 100%
+         background: url(../../assets/img/header-bg.jpg) center no-repeat
+         background-size: cover
+         overflow: hidden
+         position: relative
+
+
+.headervid
+    position: absolute
+    min-width: 100%
+    max-height: 100%
+    width: auto
+    height: auto
+    left: 0px
+    top: 0px
+    z-index: 0
+    display: block
+    +mobile
+        display: none
+
+.overlay
+    position: absolute
+    left: 0px
+    top: 0px
+    width: 110%
+    height: 100%
+    background: url(../../assets/img/header-overlay.png) repeat
+    z-index: 2
+    +mobile 
+        display: none
+
+.parent
+    display: flex
+    justify-content: center
+    align-items: center
+
+    img
+        width: 40%
+        +mobile 
+            width: 50%
+
+.hero.is-success
+    background-color: #000000
+    .nav-menu
+        +mobile
+            background-color: #e040fb
+
+.hero-body
+    .has-text-centered
+        z-index: 3
+
+.is-success
+    .nav
+        box-shadow: none
+
+.has-addons
+    .control
+        .icon
+            color: #757575
+        .input
+            color: #757575
+            background: transparent
+            border-top-left-radius: 30px
+            border-bottom-left-radius: 30px
+            &:focus + .icon
+                color: #f0f0f0
+            &:focus
+                color: #f0f0f0
+        
+        .select
+            select
+                color: #f0f0f0
+                background: transparent
+                border-top-right-radius: 30px
+                border-bottom-right-radius: 30px
+                option
+                    color: #f0f0f0
+                    background-color: #2a2a2a
+                    border: none
+                    &:hover
+                        color: #f0f0f0
+                        background-color: #e040fb
+                &:after
+                    color: #f0f0f0
+                    
+
+.page-scroll-header
+    position: fixed
+    top: 0
+    padding-top: 10px
+    z-index: 3000
+    margin: auto
+    opacity: 0
+    height: 70px
+    background: #2a2a2a
+    transition: opacity 2s ease-out
+
+.initial-header
+    background: #2a2a2a
+    opacity: 1
+    width: 100%
+    height: 70px
+    
+    
+
+.nav-toggle
+    &:hover
+        background-color: #2a2a2a
+    span 
+        background-color: #f0f0f0
+
+.nav-right
+    padding-bottom: 10px
+    +mobile
+        background-color: #e040fb
+
+.nav-center
+    .nav-item
+        background-color: #2a2a2a
+        img
+            max-height: 3rem
+            
+
+.is-4
+    .block
+        .control
+            position: absolute
+            float: left
+            display: inline-block
+
+header
+    +desktop
+        padding-top: 10px
+
+.column
+    .notification
+        background: transparent
+    .select
+        select
+            border-radius: 30px
+
+.button-pad
+    .notification
+        padding-left: 0px
+        padding-right: 0px
+
+.tabs
+    a
+        text-decoration: none
